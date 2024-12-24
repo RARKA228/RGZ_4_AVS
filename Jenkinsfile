@@ -1,9 +1,16 @@
 pipeline {
     agent any
-    stages{
-        stage('hello'){
-            steps{
-                sh 'echo Hello Jenkins RGZ na 4'
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Compiling main.cpp'
+                sh 'g++ -o main main.cpp'
+            }
+        }
+        stage('Run') {
+            steps {
+                echo 'Running compiled program'
+                sh './main'
             }
         }
     }
