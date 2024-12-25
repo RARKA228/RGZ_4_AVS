@@ -2,6 +2,7 @@
 
 int main() {
     std::cout << "Hello, Jenkins and Hello ending of study! "
-                 "Let's celebrate the New Year and Christmas!" << std::endl;
+                 "Let's celebrate the New Year and Christmas!"
+                  "24.12.2024" << std::endl;
     return 0;
 }
